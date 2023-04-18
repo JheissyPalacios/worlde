@@ -1,0 +1,28 @@
+
+:root {
+    --white: #E5E5E5;
+    --black: #202537;
+    --light-gray: #F3F3F3;
+    --medium-gray: #D3D6DA;
+    --gray: #939B9F;
+    --green: #66A060;
+    --yellow: #CEB02C;
+    --sm: 20px;
+    --md: 35px;
+    --lg: 40px;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.Layout {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 20px;
+}
+.App {
+    width: 100%;
+    max-width: 638px;
+}

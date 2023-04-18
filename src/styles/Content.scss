@@ -1,0 +1,30 @@
+.content-grid {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 76px);
+    grid-template-rows: repeat(5, 76px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+.letter {
+    font-weight: 800;
+    font-size: var(--md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: var(--medium-gray);
+    border-radius: 5px;
+    &.mediumGray {
+        background-color: var(--medium-gray);
+    }
+    &.gray {
+        background-color: var(--gray);
+    }
+    &.yellow {
+        background-color: var(--yellow);
+    }
+    &.green {
+        background-color: var(--green);
+    }
+}

@@ -1,0 +1,45 @@
+.keyboard {
+    background-color: var(--light-gray);
+    padding: 32px 50px;
+    border-radius: 15px;
+    display: grid;
+    grid-gap: 10px;
+}
+.keyboard-line {
+    display: grid;
+    grid-template-columns: repeat(10, 45px);
+    grid-gap: 10px;
+    &.line1 {
+        margin-left: 20px;
+    }
+    &.line2 {
+        margin-left: -66px;
+    }
+    .letter {
+        font-weight: 500;
+        font-size: 18px;
+        color: #56575E;
+        line-height: 26px;
+        padding: 12px 14px;
+        cursor: pointer;
+        &.DELETE, &.ENTER {
+            width: max-content;
+        }
+        &.DELETE{
+            padding: 12px 26px;
+        }
+        &.ENTER {
+            grid-column: 1/3;
+            margin-left: 30px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &.mediumGray:hover {
+            background-color: #cecece;
+        }
+        &.gray, &.yellow, &.green {
+            pointer-events: none;
+            color: white;
+        }
+    }
+}
